@@ -1,22 +1,24 @@
 # intermediate.wheatgrass_seed.ct_4.6.19
 
 ## Project information
-### 1. This project demonstrates how to use R to quantify intermediate wheatgrass seeds.  
+### 1. This project demonstrates how to use R to quantify several seed traits for intermediate wheatgrass.  
+   1.Intermediate wheatgrass is an alternative perennial grain crop currently under domestication. 
    1. Seeds from three intermediate wheatgrass plants were imaged.
-   1. Intermediate wheatgrass is an alternative perennial grain crop currently under domestication.
-   1. Because not all domestications traits have been bred into the breeding germplasm some seeds do not thresh like normal wheat kernels.
+   1. Not all domestications traits have been bred into the wheatgrass germplasm some seeds do not thresh like normal wheat kernels.
    1. In the images you will see there are some clean (dark brown) and some hulled (light brown and larger) seeds.
    1. Note: the more you can spread the seeds out on the imaging plat the better segmentation you will get.
-   1. These images were taken with a simple DSLR camera and are saved as JPGs in the 'original images' folder.
+   1. These images were taken with a simple Nikon D300 DSLR camera and are saved as JPGs in the 'original images' folder.
+   1. A smartphone camera would also work!
 ### 2. A metadata sheet is included in the 'results' folder.  
    1. The data sheet contains important information to validate the computer output.
    1. Variables were collected manually on clean seed count, hulled seed count, and threshability.
+   1. Threshability was visual score (ordinal) taken by an experianced wheatgrass breeder.
 ### 3. Several training data csv files are included in the 'training data' folder.  
    1. Collectively, these mixes (csv files) make up the training palette for this project.
    1. The training palette is used to fit random forest models.
    1. The training palette can be expanded or shrunk by adding or subtracting mixes.
-   1. New mixes can be made easily in ImageJ (SEE MODULE ON MAKING TRAINING DATA).
-   1. Mixes can be subtracted by removing the files after downloading or using R.
+   1. New mixes can be made easily in ImageJ (SEE MODULE ON 'MAKING TRAINING DATA').
+   1. Mixes can be subtracted by removing the files after downloading or using R to filter() files.
 
 
 ## Setup
@@ -33,4 +35,4 @@
    1. Build three random forest models.
    1. Operate image analysis using the models and EBImage functions.
    1. Output and save a summary data file.
-1. This script will take about 4-6 minutes to run (13.3 min with a 2014 MacBook Pro 16G RAM macOS High Sierra).
+1. This script will take about 4-6 minutes per image to run (13.3 min with a 2014 MacBook Pro 16G RAM macOS High Sierra).
